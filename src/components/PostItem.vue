@@ -25,6 +25,7 @@ export default defineComponent({
       <p>{{ post.body }}</p>
     </div>
     <app-button @click="$emit('remove', post)">Удалить</app-button>
+    <app-button @click="$router.push(`/posts/${post.id}`)">Открыть</app-button>
   </li>
 </template>
 
